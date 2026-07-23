@@ -17,14 +17,19 @@
       Gurati <span>Coffee</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="coffee.html" class="active">Our Coffee</a></li>
-      <li><a href="why-us.html">Why Gurati</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+      <li><a href="coffee.html" class="active" data-i18n="nav.coffee">Our Coffee</a></li>
+      <li><a href="why-us.html" data-i18n="nav.why">Why Gurati</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="am">አማ</button>
+        <button type="button" data-lang="om">OM</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="common.requestQuote">Request a Quote</a>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -34,61 +39,122 @@
 
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumb">Home / Our Specialty Coffee</p>
-    <h1>Our Specialty Coffee</h1>
-    <p>A curated range of Ethiopian coffee, grown, processed, and exported with care.</p>
+    <p class="breadcrumb" data-i18n="coffee.breadcrumb">Home / Our Specialty Coffee</p>
+    <h1 data-i18n="coffee.title">Our Specialty Coffee</h1>
+    <p data-i18n="coffee.subtitle">A curated range of Ethiopian coffee, grown, processed, and exported with care.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" data-i18n="coffee.originsEyebrow">Explore Our Origins</span>
+      <h2 data-i18n="coffee.originsTitle">Ethiopian Coffee Origins We Work With</h2>
+      <p data-i18n="coffee.originsDesc">Typical altitude, process, and flavor profiles for the regions in our sourcing network.</p>
+    </div>
+    <div class="grid grid-4 origin-grid">
+      <div class="origin-card">
+        <div class="origin-photo sidama">
+          ☕
+          <span class="region-tag" data-i18n="coffee.regionTag">Ethiopia</span>
+        </div>
+        <div class="origin-body">
+          <h3 data-i18n="coffee.sidama">Sidama</h3>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.altitude">Altitude</span><span class="value" data-i18n="coffee.sidamaAlt">1,800–2,200 masl</span></div>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.process">Process</span><span class="value" data-i18n="coffee.sidamaProcess">Washed & Natural</span></div>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.flavor">Flavor Notes</span><span class="value" data-i18n="coffee.sidamaFlavor">Citrus, bergamot, floral</span></div>
+        </div>
+      </div>
+      <div class="origin-card">
+        <div class="origin-photo yirgacheffe">
+          ☕
+          <span class="region-tag" data-i18n="coffee.regionTag">Ethiopia</span>
+        </div>
+        <div class="origin-body">
+          <h3 data-i18n="coffee.yirgacheffe">Yirgacheffe</h3>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.altitude">Altitude</span><span class="value" data-i18n="coffee.yirgacheffeAlt">1,700–2,200 masl</span></div>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.process">Process</span><span class="value" data-i18n="coffee.yirgacheffeProcess">Washed</span></div>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.flavor">Flavor Notes</span><span class="value" data-i18n="coffee.yirgacheffeFlavor">Jasmine, lemon, bright floral</span></div>
+        </div>
+      </div>
+      <div class="origin-card">
+        <div class="origin-photo guji">
+          ☕
+          <span class="region-tag" data-i18n="coffee.regionTag">Ethiopia</span>
+        </div>
+        <div class="origin-body">
+          <h3 data-i18n="coffee.guji">Guji</h3>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.altitude">Altitude</span><span class="value" data-i18n="coffee.gujiAlt">1,850–2,300 masl</span></div>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.process">Process</span><span class="value" data-i18n="coffee.gujiProcess">Natural & Washed</span></div>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.flavor">Flavor Notes</span><span class="value" data-i18n="coffee.gujiFlavor">Blueberry, wine, tropical fruit</span></div>
+        </div>
+      </div>
+      <div class="origin-card">
+        <div class="origin-photo limu">
+          ☕
+          <span class="region-tag" data-i18n="coffee.regionTag">Ethiopia</span>
+        </div>
+        <div class="origin-body">
+          <h3 data-i18n="coffee.limu">Limu</h3>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.altitude">Altitude</span><span class="value" data-i18n="coffee.limuAlt">1,400–1,900 masl</span></div>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.process">Process</span><span class="value" data-i18n="coffee.limuProcess">Washed</span></div>
+          <div class="origin-meta-row"><span class="label" data-i18n="coffee.flavor">Flavor Notes</span><span class="value" data-i18n="coffee.limuFlavor">Winey, spice, balanced sweetness</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="origin-note" data-i18n="coffee.originNote">Profiles are typical of the region — specific lot data available on request.</p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
     <div class="grid grid-3">
       <div class="card">
         <div class="card-icon">☕</div>
-        <h3>Single-Origin Ethiopian Coffee</h3>
-        <p>Beans traceable to specific farms and cooperatives, expressing the distinct character of each Ethiopian growing region.</p>
+        <h3 data-i18n="coffee.card1Title">Single-Origin Ethiopian Coffee</h3>
+        <p data-i18n="coffee.card1Desc">Beans traceable to specific farms and cooperatives, expressing the distinct character of each Ethiopian growing region.</p>
       </div>
       <div class="card">
         <div class="card-icon">⭐</div>
-        <h3>Specialty Grade Arabica Coffee</h3>
-        <p>Cupped, scored, and graded to specialty standards — beans selected for exceptional aroma, body, and flavor clarity.</p>
+        <h3 data-i18n="coffee.card2Title">Specialty Grade Arabica Coffee</h3>
+        <p data-i18n="coffee.card2Desc">Cupped, scored, and graded to specialty standards — beans selected for exceptional aroma, body, and flavor clarity.</p>
       </div>
       <div class="card">
         <div class="card-icon">🌿</div>
-        <h3>Natural Process Coffee</h3>
-        <p>Dried in the fruit, producing bold, fruit-forward, and complex cups with rich sweetness.</p>
+        <h3 data-i18n="coffee.card3Title">Natural Process Coffee</h3>
+        <p data-i18n="coffee.card3Desc">Dried in the fruit, producing bold, fruit-forward, and complex cups with rich sweetness.</p>
       </div>
       <div class="card">
         <div class="card-icon">💧</div>
-        <h3>Washed Process Coffee</h3>
-        <p>Fermented and washed for clean, bright, and vibrant cups with refined acidity and clarity.</p>
+        <h3 data-i18n="coffee.card4Title">Washed Process Coffee</h3>
+        <p data-i18n="coffee.card4Desc">Fermented and washed for clean, bright, and vibrant cups with refined acidity and clarity.</p>
       </div>
       <div class="card">
         <div class="card-icon">📦</div>
-        <h3>Wholesale &amp; Export</h3>
-        <p>Reliable bulk supply for roasters, cafés, and distributors, backed by consistent quality control and shipping.</p>
+        <h3 data-i18n="coffee.card5Title">Wholesale &amp; Export</h3>
+        <p data-i18n="coffee.card5Desc">Reliable bulk supply for roasters, cafés, and distributors, backed by consistent quality control and shipping.</p>
       </div>
       <div class="card">
         <div class="card-icon">🌍</div>
-        <h3>Worldwide Import &amp; Export</h3>
-        <p>Partnering with buyers across the globe to deliver Ethiopian coffee wherever it's needed.</p>
+        <h3 data-i18n="coffee.card6Title">Worldwide Import &amp; Export</h3>
+        <p data-i18n="coffee.card6Desc">Partnering with buyers across the globe to deliver Ethiopian coffee wherever it's needed.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="section">
   <div class="container">
     <div class="split">
       <div class="split-media alt has-photo">
         <img src="images/GUATI.jpeg" alt="Gurati Coffee export bag — premium Ethiopian coffee" loading="lazy">
       </div>
       <div>
-        <span class="eyebrow">Quality You Can Trust</span>
-        <h2>Grown in the Birthplace of Coffee</h2>
-        <p>Ethiopia's forests and highlands offer some of the most biodiverse coffee-growing conditions on earth — ideal altitude, rainfall, and heirloom varietals that give Gurati Coffee its distinct character.</p>
-        <p>Every lot is selected, processed, and quality-checked before it leaves Ethiopia, so what arrives at your roastery is consistent, traceable, and ready to shine.</p>
-        <a href="contact.html" class="btn btn-dark">Request Samples &amp; Pricing</a>
+        <span class="eyebrow" data-i18n="coffee.qualityEyebrow">Quality You Can Trust</span>
+        <h2 data-i18n="coffee.qualityTitle">Grown in the Birthplace of Coffee</h2>
+        <p data-i18n="coffee.qualityP1">Ethiopia's forests and highlands offer some of the most biodiverse coffee-growing conditions on earth — ideal altitude, rainfall, and heirloom varietals that give Gurati Coffee its distinct character.</p>
+        <p data-i18n="coffee.qualityP2">Every lot is selected, processed, and quality-checked before it leaves Ethiopia, so what arrives at your roastery is consistent, traceable, and ready to shine.</p>
+        <a href="contact.html" class="btn btn-dark" data-i18n="coffee.requestSamples">Request Samples &amp; Pricing</a>
       </div>
     </div>
   </div>
@@ -98,10 +164,10 @@
   <div class="container">
     <div class="cta-band">
       <div>
-        <h2>Looking for a reliable coffee supplier?</h2>
-        <p>Request a quote for wholesale pricing and export options.</p>
+        <h2 data-i18n="coffee.ctaTitle">Looking for a reliable coffee supplier?</h2>
+        <p data-i18n="coffee.ctaDesc">Request a quote for wholesale pricing and export options.</p>
       </div>
-      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+      <a href="contact.html" class="btn btn-primary" data-i18n="common.requestQuote">Request a Quote</a>
     </div>
   </div>
 </section>
@@ -114,32 +180,32 @@
           <span class="logo-mark">G</span>
           Gurati <span>Coffee</span>
         </a>
-        <p class="footer-tagline">"Rooted in Ethiopia. Shared with the World."</p>
-        <p class="footer-desc">Premium Ethiopian Specialty Coffee — sourced, graded, and exported with care to roasters and distributors worldwide.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">"Rooted in Ethiopia. Shared with the World."</p>
+        <p class="footer-desc" data-i18n="footer.desc">Premium Ethiopian Specialty Coffee — sourced, graded, and exported with care to roasters and distributors worldwide.</p>
       </div>
       <div class="footer-col">
-        <h4>Explore</h4>
+        <h4 data-i18n="footer.explore">Explore</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="coffee.html">Our Coffee</a></li>
-          <li><a href="why-us.html">Why Gurati</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="coffee.html" data-i18n="nav.coffee">Our Coffee</a></li>
+          <li><a href="why-us.html" data-i18n="nav.why">Why Gurati</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Coffee</h4>
+        <h4 data-i18n="footer.coffeeCol">Coffee</h4>
         <ul>
-          <li><a href="coffee.html">Single-Origin</a></li>
-          <li><a href="coffee.html">Natural Process</a></li>
-          <li><a href="coffee.html">Washed Process</a></li>
-          <li><a href="coffee.html">Wholesale &amp; Export</a></li>
+          <li><a href="coffee.html" data-i18n="footer.singleOrigin">Single-Origin</a></li>
+          <li><a href="coffee.html" data-i18n="footer.natural">Natural Process</a></li>
+          <li><a href="coffee.html" data-i18n="footer.washed">Washed Process</a></li>
+          <li><a href="coffee.html" data-i18n="footer.wholesale">Wholesale &amp; Export</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contactCol">Contact</h4>
         <div class="contact-item">
           <span class="icon">📍</span>
-          <p>Toronto, Ontario, Canada</p>
+          <p data-i18n="footer.location">Toronto, Ontario, Canada</p>
         </div>
         <div class="contact-item">
           <span class="icon">📞</span>
@@ -152,7 +218,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Gurati Coffee. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">© 2026 Gurati Coffee. All Rights Reserved.</p>
       <div class="emails">
         <a href="mailto:sifenabdella2000@gmail.com">sifenabdella2000@gmail.com</a>
         <a href="mailto:Natoliahmed12@gmail.com">Natoliahmed12@gmail.com</a>
@@ -161,6 +227,7 @@
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

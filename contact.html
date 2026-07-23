@@ -17,14 +17,19 @@
       Gurati <span>Coffee</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="coffee.html">Our Coffee</a></li>
-      <li><a href="why-us.html">Why Gurati</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+      <li><a href="coffee.html" data-i18n="nav.coffee">Our Coffee</a></li>
+      <li><a href="why-us.html" data-i18n="nav.why">Why Gurati</a></li>
+      <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="am">አማ</button>
+        <button type="button" data-lang="om">OM</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="common.requestQuote">Request a Quote</a>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -34,9 +39,9 @@
 
 <section class="page-hero">
   <div class="container">
-    <p class="breadcrumb">Home / Contact Us</p>
-    <h1>Contact Us</h1>
-    <p>Reach out for wholesale pricing, samples, or export inquiries.</p>
+    <p class="breadcrumb" data-i18n="contact.breadcrumb">Home / Contact Us</p>
+    <h1 data-i18n="contact.title">Contact Us</h1>
+    <p data-i18n="contact.subtitle">Reach out for wholesale pricing, samples, or export inquiries.</p>
   </div>
 </section>
 
@@ -44,81 +49,91 @@
   <div class="container">
     <div class="contact-grid">
       <div class="contact-info-card">
-        <h3>Get in Touch</h3>
+        <h3 data-i18n="contact.getInTouch">Get in Touch</h3>
         <div class="contact-item">
           <span class="icon">📍</span>
           <div>
-            <h4>Location</h4>
-            <p>Toronto, Ontario, Canada</p>
+            <h4 data-i18n="contact.location">Location</h4>
+            <p data-i18n="contact.locationValue">Toronto, Ontario, Canada</p>
           </div>
         </div>
         <div class="contact-item">
           <span class="icon">📞</span>
           <div>
-            <h4>Phone (Canada)</h4>
+            <h4 data-i18n="contact.phoneCanada">Phone (Canada)</h4>
             <a href="tel:+14375221446">+1 (437) 522-1446</a>
           </div>
         </div>
         <div class="contact-item">
           <span class="icon">📞</span>
           <div>
-            <h4>Phone (Ethiopia)</h4>
+            <h4 data-i18n="contact.phoneEthiopia">Phone (Ethiopia)</h4>
             <a href="tel:+251949573797">+251 94 957 3797</a>
           </div>
         </div>
         <div class="contact-item">
           <span class="icon">✉️</span>
           <div>
-            <h4>Email</h4>
+            <h4 data-i18n="contact.emailLabel">Email</h4>
             <a href="mailto:Natoliahmed12@gmail.com">Natoliahmed12@gmail.com</a>
           </div>
         </div>
         <div class="tag-row">
-          <span class="tag">Wholesale</span>
-          <span class="tag">Export</span>
-          <span class="tag">Samples</span>
+          <span class="tag" data-i18n="contact.tagWholesale">Wholesale</span>
+          <span class="tag" data-i18n="contact.tagExport">Export</span>
+          <span class="tag" data-i18n="contact.tagSamples">Samples</span>
         </div>
       </div>
 
       <form class="contact-form" action="mailto:Natoliahmed12@gmail.com" method="POST" enctype="text/plain">
         <div class="form-row">
           <div class="field">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="Full Name" placeholder="Your name" required>
+            <label for="name" data-i18n="contact.fullName">Full Name</label>
+            <input type="text" id="name" name="Full Name" placeholder="Your name" data-i18n-placeholder="contact.fullNamePh" required>
           </div>
           <div class="field">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="Company" placeholder="Your company">
+            <label for="company" data-i18n="contact.company">Company Name</label>
+            <input type="text" id="company" name="Company" placeholder="Your company" data-i18n-placeholder="contact.companyPh">
           </div>
         </div>
         <div class="form-row">
           <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" placeholder="you@company.com" required>
+            <label for="email" data-i18n="contact.emailField">Email</label>
+            <input type="email" id="email" name="Email" placeholder="you@company.com" data-i18n-placeholder="contact.emailPh" required>
           </div>
           <div class="field">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="Phone" placeholder="+1 (000) 000-0000">
+            <label for="phone" data-i18n="contact.phone">Phone</label>
+            <input type="tel" id="phone" name="Phone" placeholder="+1 (000) 000-0000" data-i18n-placeholder="contact.phonePh">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="country" data-i18n="contact.country">Country</label>
+            <input type="text" id="country" name="Country" placeholder="Your country" data-i18n-placeholder="contact.countryPh" required>
+          </div>
+          <div class="field">
+            <label for="quantity" data-i18n="contact.quantity">Quantity Needed</label>
+            <input type="text" id="quantity" name="Quantity Needed" placeholder="e.g. 1 container / 500kg / monthly volume" data-i18n-placeholder="contact.quantityPh">
           </div>
         </div>
         <div class="field">
-          <label for="interest">I'm Interested In</label>
+          <label for="interest" data-i18n="contact.interest">I'm Interested In</label>
           <select id="interest" name="Interested In">
-            <option>Wholesale &amp; Export</option>
-            <option>Single-Origin Ethiopian Coffee</option>
-            <option>Specialty Grade Arabica</option>
-            <option>Natural Process Coffee</option>
-            <option>Washed Process Coffee</option>
-            <option>Requesting a Sample</option>
-            <option>Other Inquiry</option>
+            <option data-i18n="contact.opt.wholesale">Wholesale &amp; Export</option>
+            <option data-i18n="contact.opt.single">Single-Origin Ethiopian Coffee</option>
+            <option data-i18n="contact.opt.specialty">Specialty Grade Arabica</option>
+            <option data-i18n="contact.opt.natural">Natural Process Coffee</option>
+            <option data-i18n="contact.opt.washed">Washed Process Coffee</option>
+            <option data-i18n="contact.opt.sample">Requesting a Sample</option>
+            <option data-i18n="contact.opt.other">Other Inquiry</option>
           </select>
         </div>
         <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="Message" placeholder="Tell us about your quantity needs, timeline, or questions..." required></textarea>
+          <label for="message" data-i18n="contact.message">Message</label>
+          <textarea id="message" name="Message" placeholder="Tell us about your quantity needs, timeline, or questions..." data-i18n-placeholder="contact.messagePh" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-        <p class="form-note">Submitting opens your email client, addressed to Natoliahmed12@gmail.com.</p>
+        <button type="submit" class="btn btn-primary" data-i18n="contact.send">Send Message</button>
+        <p class="form-note" data-i18n="contact.note">Submitting opens your email client, addressed to Natoliahmed12@gmail.com.</p>
       </form>
     </div>
 
@@ -141,32 +156,32 @@
           <span class="logo-mark">G</span>
           Gurati <span>Coffee</span>
         </a>
-        <p class="footer-tagline">"Rooted in Ethiopia. Shared with the World."</p>
-        <p class="footer-desc">Premium Ethiopian Specialty Coffee — sourced, graded, and exported with care to roasters and distributors worldwide.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">"Rooted in Ethiopia. Shared with the World."</p>
+        <p class="footer-desc" data-i18n="footer.desc">Premium Ethiopian Specialty Coffee — sourced, graded, and exported with care to roasters and distributors worldwide.</p>
       </div>
       <div class="footer-col">
-        <h4>Explore</h4>
+        <h4 data-i18n="footer.explore">Explore</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="coffee.html">Our Coffee</a></li>
-          <li><a href="why-us.html">Why Gurati</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="coffee.html" data-i18n="nav.coffee">Our Coffee</a></li>
+          <li><a href="why-us.html" data-i18n="nav.why">Why Gurati</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Coffee</h4>
+        <h4 data-i18n="footer.coffeeCol">Coffee</h4>
         <ul>
-          <li><a href="coffee.html">Single-Origin</a></li>
-          <li><a href="coffee.html">Natural Process</a></li>
-          <li><a href="coffee.html">Washed Process</a></li>
-          <li><a href="coffee.html">Wholesale &amp; Export</a></li>
+          <li><a href="coffee.html" data-i18n="footer.singleOrigin">Single-Origin</a></li>
+          <li><a href="coffee.html" data-i18n="footer.natural">Natural Process</a></li>
+          <li><a href="coffee.html" data-i18n="footer.washed">Washed Process</a></li>
+          <li><a href="coffee.html" data-i18n="footer.wholesale">Wholesale &amp; Export</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contactCol">Contact</h4>
         <div class="contact-item">
           <span class="icon">📍</span>
-          <p>Toronto, Ontario, Canada</p>
+          <p data-i18n="footer.location">Toronto, Ontario, Canada</p>
         </div>
         <div class="contact-item">
           <span class="icon">📞</span>
@@ -179,7 +194,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Gurati Coffee. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">© 2026 Gurati Coffee. All Rights Reserved.</p>
       <div class="emails">
         <a href="mailto:sifenabdella2000@gmail.com">sifenabdella2000@gmail.com</a>
         <a href="mailto:Natoliahmed12@gmail.com">Natoliahmed12@gmail.com</a>
@@ -188,6 +203,7 @@
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

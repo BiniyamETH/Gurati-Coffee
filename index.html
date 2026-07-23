@@ -17,14 +17,19 @@
       Gurati <span>Coffee</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="coffee.html">Our Coffee</a></li>
-      <li><a href="why-us.html">Why Gurati</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+      <li><a href="coffee.html" data-i18n="nav.coffee">Our Coffee</a></li>
+      <li><a href="why-us.html" data-i18n="nav.why">Why Gurati</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="active">EN</button>
+        <button type="button" data-lang="am">አማ</button>
+        <button type="button" data-lang="om">OM</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary" data-i18n="common.requestQuote">Request a Quote</a>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -33,14 +38,32 @@
 </header>
 
 <section class="hero">
-  <div class="container hero-inner">
-    <span class="eyebrow">Authentic Ethiopian Specialty Coffee</span>
-    <h1>From the <em>Forests of Ethiopia</em> to the World</h1>
-    <p>At Gurati Coffee, we source and export premium Ethiopian specialty coffee with a commitment to quality, sustainability, and traceability.</p>
-    <div class="hero-actions">
-      <a href="coffee.html" class="btn btn-primary">Explore Our Coffee</a>
-      <a href="contact.html" class="btn btn-outline">Request a Quote</a>
+  <div class="container hero-split">
+    <div class="hero-inner">
+      <span class="eyebrow" data-i18n="home.eyebrow">Authentic Ethiopian Specialty Coffee</span>
+      <h1 data-i18n="home.heroTitle" data-i18n-html>From the <em>Forests of Ethiopia</em> to the World</h1>
+      <p data-i18n="home.heroDesc">At Gurati Coffee, we source and export premium Ethiopian specialty coffee with a commitment to quality, sustainability, and traceability.</p>
+      <div class="hero-actions">
+        <a href="coffee.html" class="btn btn-primary" data-i18n="home.exploreCoffee">Explore Our Coffee</a>
+        <a href="contact.html" class="btn btn-outline" data-i18n="common.requestQuote">Request a Quote</a>
+      </div>
     </div>
+    <div class="hero-visual">
+      <span class="visual-mark">☕</span>
+      <div class="hero-visual-badge">
+        <strong data-i18n="home.visualBadgeTitle">Ethiopia to Your Roastery</strong>
+        <span data-i18n="home.visualBadgeDesc">Specialty-grade beans, sourced at origin and shipped worldwide.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-bar">
+  <div class="container trust-bar-inner">
+    <div class="trust-item"><span class="trust-icon">🌱</span><span data-i18n="trust.direct">Direct from Ethiopian Farmers</span></div>
+    <div class="trust-item"><span class="trust-icon">✅</span><span data-i18n="trust.inspected">Quality Inspected & Cupped</span></div>
+    <div class="trust-item"><span class="trust-icon">🚢</span><span data-i18n="trust.shipping">Worldwide Shipping</span></div>
+    <div class="trust-item"><span class="trust-icon">🔍</span><span data-i18n="trust.traceability">Full Traceability</span></div>
   </div>
 </section>
 
@@ -48,11 +71,11 @@
   <div class="container">
     <div class="split">
       <div>
-        <span class="eyebrow">About Gurati Coffee</span>
-        <h2>Rooted in Ethiopia, Shared with the World</h2>
-        <p>Gurati Coffee is a specialty coffee company dedicated to bringing the rich flavors of Ethiopia to coffee roasters, cafés, and distributors worldwide.</p>
-        <p>Every bean is carefully selected to deliver exceptional quality in every shipment — from the forest to your cup.</p>
-        <a href="about.html" class="btn btn-dark">Learn More About Us</a>
+        <span class="eyebrow" data-i18n="home.aboutEyebrow">About Gurati Coffee</span>
+        <h2 data-i18n="home.aboutTitle">Rooted in Ethiopia, Shared with the World</h2>
+        <p data-i18n="home.aboutP1">Gurati Coffee is a specialty coffee company dedicated to bringing the rich flavors of Ethiopia to coffee roasters, cafés, and distributors worldwide.</p>
+        <p data-i18n="home.aboutP2">Every bean is carefully selected to deliver exceptional quality in every shipment — from the forest to your cup.</p>
+        <a href="about.html" class="btn btn-dark" data-i18n="home.learnMore">Learn More About Us</a>
       </div>
       <div class="split-media has-photo">
         <img src="images/GUATI.jpeg" alt="Gurati Coffee export bag — premium Ethiopian coffee" loading="lazy">
@@ -64,30 +87,30 @@
 <section class="section section-alt">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">What We Offer</span>
-      <h2>Our Specialty Coffee</h2>
-      <p>A curated range of Ethiopian coffee, grown and processed with care.</p>
+      <span class="eyebrow" data-i18n="home.offerEyebrow">What We Offer</span>
+      <h2 data-i18n="home.offerTitle">Our Specialty Coffee</h2>
+      <p data-i18n="home.offerDesc">A curated range of Ethiopian coffee, grown and processed with care.</p>
     </div>
     <div class="grid grid-4">
       <div class="card">
         <div class="card-icon">☕</div>
-        <h3>Single-Origin Ethiopian Coffee</h3>
-        <p>Distinct, traceable flavors from Ethiopia's finest growing regions.</p>
+        <h3 data-i18n="home.card1Title">Single-Origin Ethiopian Coffee</h3>
+        <p data-i18n="home.card1Desc">Distinct, traceable flavors from Ethiopia's finest growing regions.</p>
       </div>
       <div class="card">
         <div class="card-icon">⭐</div>
-        <h3>Specialty Grade Arabica</h3>
-        <p>Premium Arabica beans, cupped and graded for exceptional quality.</p>
+        <h3 data-i18n="home.card2Title">Specialty Grade Arabica</h3>
+        <p data-i18n="home.card2Desc">Premium Arabica beans, cupped and graded for exceptional quality.</p>
       </div>
       <div class="card">
         <div class="card-icon">🌿</div>
-        <h3>Natural Process Coffee</h3>
-        <p>Sun-dried for bold, fruit-forward, complex flavor profiles.</p>
+        <h3 data-i18n="home.card3Title">Natural Process Coffee</h3>
+        <p data-i18n="home.card3Desc">Sun-dried for bold, fruit-forward, complex flavor profiles.</p>
       </div>
       <div class="card">
         <div class="card-icon">💧</div>
-        <h3>Washed Process Coffee</h3>
-        <p>Clean, bright, and vibrant cups with refined clarity.</p>
+        <h3 data-i18n="home.card4Title">Washed Process Coffee</h3>
+        <p data-i18n="home.card4Desc">Clean, bright, and vibrant cups with refined clarity.</p>
       </div>
     </div>
   </div>
@@ -96,30 +119,30 @@
 <section class="why-band">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">Why Choose Us</span>
-      <h2>Why Gurati Coffee?</h2>
-      <p>Trusted by roasters and distributors for consistency, quality, and integrity.</p>
+      <span class="eyebrow" data-i18n="why.eyebrow">Why Choose Us</span>
+      <h2 data-i18n="why.title">Why Gurati Coffee?</h2>
+      <p data-i18n="why.desc">Trusted by roasters and distributors for consistency, quality, and integrity.</p>
     </div>
     <div class="grid grid-4">
       <div class="card">
         <div class="card-icon">🌲</div>
-        <h3>Directly Sourced</h3>
-        <p>Sourced directly from Ethiopian coffee-growing regions.</p>
+        <h3 data-i18n="why.card1Title">Directly Sourced</h3>
+        <p data-i18n="why.card1Desc">Sourced directly from Ethiopian coffee-growing regions.</p>
       </div>
       <div class="card">
         <div class="card-icon">⭐</div>
-        <h3>Premium Grade</h3>
-        <p>Premium specialty grade coffee, cupped for quality.</p>
+        <h3 data-i18n="why.card2Title">Premium Grade</h3>
+        <p data-i18n="why.card2Desc">Premium specialty grade coffee, cupped for quality.</p>
       </div>
       <div class="card">
         <div class="card-icon">🌍</div>
-        <h3>Worldwide Export</h3>
-        <p>Reliable import and export to partners around the globe.</p>
+        <h3 data-i18n="why.card3Title">Worldwide Export</h3>
+        <p data-i18n="why.card3Desc">Reliable import and export to partners around the globe.</p>
       </div>
       <div class="card">
         <div class="card-icon">🤝</div>
-        <h3>Ethical Partnerships</h3>
-        <p>Sustainable relationships with farmers and cooperatives.</p>
+        <h3 data-i18n="why.card4Title">Ethical Partnerships</h3>
+        <p data-i18n="why.card4Desc">Sustainable relationships with farmers and cooperatives.</p>
       </div>
     </div>
   </div>
@@ -129,10 +152,10 @@
   <div class="container">
     <div class="cta-band">
       <div>
-        <h2>Ready to bring Gurati Coffee to your roastery?</h2>
-        <p>Get in touch for wholesale pricing, samples, and export details.</p>
+        <h2 data-i18n="home.ctaTitle">Ready to bring Gurati Coffee to your roastery?</h2>
+        <p data-i18n="home.ctaDesc">Get in touch for wholesale pricing, samples, and export details.</p>
       </div>
-      <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+      <a href="contact.html" class="btn btn-primary" data-i18n="common.requestQuote">Request a Quote</a>
     </div>
   </div>
 </section>
@@ -145,32 +168,32 @@
           <span class="logo-mark">G</span>
           Gurati <span>Coffee</span>
         </a>
-        <p class="footer-tagline">"Rooted in Ethiopia. Shared with the World."</p>
-        <p class="footer-desc">Premium Ethiopian Specialty Coffee — sourced, graded, and exported with care to roasters and distributors worldwide.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">"Rooted in Ethiopia. Shared with the World."</p>
+        <p class="footer-desc" data-i18n="footer.desc">Premium Ethiopian Specialty Coffee — sourced, graded, and exported with care to roasters and distributors worldwide.</p>
       </div>
       <div class="footer-col">
-        <h4>Explore</h4>
+        <h4 data-i18n="footer.explore">Explore</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="coffee.html">Our Coffee</a></li>
-          <li><a href="why-us.html">Why Gurati</a></li>
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
+          <li><a href="coffee.html" data-i18n="nav.coffee">Our Coffee</a></li>
+          <li><a href="why-us.html" data-i18n="nav.why">Why Gurati</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Coffee</h4>
+        <h4 data-i18n="footer.coffeeCol">Coffee</h4>
         <ul>
-          <li><a href="coffee.html">Single-Origin</a></li>
-          <li><a href="coffee.html">Natural Process</a></li>
-          <li><a href="coffee.html">Washed Process</a></li>
-          <li><a href="coffee.html">Wholesale &amp; Export</a></li>
+          <li><a href="coffee.html" data-i18n="footer.singleOrigin">Single-Origin</a></li>
+          <li><a href="coffee.html" data-i18n="footer.natural">Natural Process</a></li>
+          <li><a href="coffee.html" data-i18n="footer.washed">Washed Process</a></li>
+          <li><a href="coffee.html" data-i18n="footer.wholesale">Wholesale &amp; Export</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
+        <h4 data-i18n="footer.contactCol">Contact</h4>
         <div class="contact-item">
           <span class="icon">📍</span>
-          <p>Toronto, Ontario, Canada</p>
+          <p data-i18n="footer.location">Toronto, Ontario, Canada</p>
         </div>
         <div class="contact-item">
           <span class="icon">📞</span>
@@ -183,7 +206,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Gurati Coffee. All Rights Reserved.</p>
+      <p data-i18n="footer.copyright">© 2026 Gurati Coffee. All Rights Reserved.</p>
       <div class="emails">
         <a href="mailto:sifenabdella2000@gmail.com">sifenabdella2000@gmail.com</a>
         <a href="mailto:Natoliahmed12@gmail.com">Natoliahmed12@gmail.com</a>
@@ -192,6 +215,7 @@
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
