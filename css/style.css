@@ -1052,7 +1052,7 @@ body.lang-am .footer-tagline {
 }
 
 @media (max-width: 720px) {
-  .nav-links, .nav-cta .btn-outline-desktop { display: none; }
+  .nav-links, .nav-cta > .btn { display: none; }
   .nav-toggle { display: flex; }
   .nav-cta { gap: 12px; }
 
@@ -1087,4 +1087,8 @@ body.lang-am .footer-tagline {
   .trust-bar-inner { flex-direction: column; align-items: flex-start; gap: 18px; }
   .origin-grid { grid-template-columns: 1fr; }
   .lang-switcher { margin-left: 0; }
+
+  .logo { font-size: 1.05rem; gap: 6px; }
+  .logo-mark { width: 30px; height: 30px; font-size: 0.95rem; }
+  .lang-switcher button { padding: 5px 8px; font-size: 0.68rem; }
 }
